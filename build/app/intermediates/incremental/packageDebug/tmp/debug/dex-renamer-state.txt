@@ -1,0 +1,4 @@
+#Tue May 03 04:29:28 PDT 2022
+base.0=/Users/azure/Downloads/hw4/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
