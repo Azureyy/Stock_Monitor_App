@@ -15,7 +15,6 @@ class Stock {
   final String weburl;
   final String exchange;
   final String market;
-
   const Stock(
       {required this.price,
       required this.change,

@@ -9,7 +9,6 @@ class StockApi {
   static Future<List<String>> searchStocks({@required String? query}) async {
     final response = await http.get(
         Uri.parse('https://finnhub.io/api/v1/search?q=$query&token=$apiKey'));
-
     final body = json.decode(response.body)['result'];
 
     return body.map<String>((json) {

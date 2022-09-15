@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
@@ -32,21 +32,19 @@ class HomePage extends StatelessWidget {
                         ),
                         backgroundColor: (Colors.grey[850]),
                         actions: [
-                        IconButton(
-                          color:  Colors.grey[500],
-                          onPressed: () => _controller.clear(),
-                          icon: const Icon(Icons.clear),
-                        )
-                      ],
+                          IconButton(
+                            color: Colors.grey[500],
+                            onPressed: () => _controller.clear(),
+                            icon: const Icon(Icons.clear),
+                          )
+                        ],
                       ),
                       body: const Center(
                         child: Text(
                           'No suggestions found!',
                           style: TextStyle(fontSize: 24, color: Colors.white),
                         ),
-                        
                       ),
-                      
                     );
                   },
                 ));
@@ -73,10 +71,10 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.right,
                         )),
-                          Align(
+                    Align(
                         alignment: Alignment.topRight,
                         child: Text(formattedDate,
-                                style: TextStyle(
+                            style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold),
@@ -86,7 +84,8 @@ class HomePage extends StatelessWidget {
                         child: Text("Favorites",
                             style: TextStyle(color: Colors.white, fontSize: 20),
                             textAlign: TextAlign.left)),
-                    const Divider(height: 60.0,  color: Colors.white, thickness: 1.5)
+                    const Divider(
+                        height: 60.0, color: Colors.white, thickness: 1.5)
                   ]),
             ),
           ],
